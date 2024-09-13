@@ -1,0 +1,46 @@
+#Form {
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical; /* Permitir redimensionar verticalmente */
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+#h1-form {
+    text-align: left;
+}
+
+form div .error {
+    font-size: 15px;
+    padding-top: 5px;
+    display: block;
+    color: #656dff;
+    text-align: right;
+    text-shadow: 0 0 15px #656dff;
+}
