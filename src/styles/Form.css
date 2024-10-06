@@ -21,6 +21,7 @@ textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    background-color: #9b9b9b;
 }
 
 textarea {
@@ -30,10 +31,6 @@ textarea {
 button {
     padding: 10px 15px;
     border-radius: 4px;
-}
-
-#h1-form {
-    text-align: left;
 }
 
 form div .error {

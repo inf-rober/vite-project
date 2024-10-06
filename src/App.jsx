@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './styles/App.css'
-import Desc from './components/Desc.jsx' // Import mío
+import Desc from './components/Desc.jsx' // Import mío 1
 
 function App({tag}) { // Este prop lo codifiqué yo
   const [desc, setDesc] = useState("Vite") // Hook que utilicé para modificar el componente Desc
@@ -18,8 +18,9 @@ function App({tag}) { // Este prop lo codifiqué yo
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
+      <h1 id='h1-title'>Vite + React</h1>
+      <br />
+      <div>
         {
           /* 
             Utilizando un operador ternario para modificar la descripción según
@@ -32,10 +33,11 @@ function App({tag}) { // Este prop lo codifiqué yo
           </button>
           :
           <button onClick={() => setDesc("Vite")}>
-          Cambiar descripción
+            Cambiar descripción
           </button>
         }
       </div>
+      <br />
       <Desc desc={desc}/> {/* Invocando componente con su prop correspondiente */}
     </>
   )

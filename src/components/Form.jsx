@@ -57,7 +57,7 @@ function Form() {
 
     return (
         <>
-            <h1 id="h1-form">Parte 2. Formularios, eventos, validaciones</h1>
+            <h1>Parte 2. Formularios, eventos, validaciones</h1>
             <h3>Formulario de contacto</h3>
             <form id="Form" onSubmit={eventHandlerSubmit}>
                 <div className="form-group">

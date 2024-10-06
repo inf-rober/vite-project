@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const Desc = ({ desc }) => {
     return (
-        <div>
+        <>
             <h3>Descripción</h3>
             {
                 /* Utilizando operador ternario para mostrar un párrafo u otro según el prop que reciba el componente Desc (Desc está inserto dentro del componente App) */
@@ -20,10 +20,11 @@ const Desc = ({ desc }) => {
                     especialmente para aplicaciones basadas en JavaScript y frameworks como Vue, React y otros.
                 </p>
             }
-        </div> 
+        </> 
     )
 }
 
+// SonarLint haciendo lo suyo.
 Desc.propTypes = {
     desc : PropTypes.string.isRequired
 }

@@ -1,3 +1,5 @@
+import List_items from "./List_items"
+
 function List() {
     const gentilicios = [
         {id : 1, pais : "Chile", gentilicio : "Chileno"},
@@ -5,16 +7,16 @@ function List() {
         {id : 3, pais : "Francia", gentilicio : "Francés"},
         {id : 4, pais : "Japón", gentilicio : "Japonés"},
         {id : 5, pais : "Brasil", gentilicio : "Brasileño"},
-        {id : 6, pais : "USA", gentilicio : "Norteamericano"}
+        {id : 6, pais : "Estados Unidos", gentilicio : "Norteamericano"}
     ]
     return (
-        <div>
-            <h1 id="h1-list">Parte 3. Lista de objetos regulares utilizando map</h1>
+        <>
+            <h1>Parte 3. Lista de objetos regulares utilizando map</h1>
             <h3>Gentilicios</h3>
             <ul>
-                {gentilicios.map(pais => <li key={pais.id}>{pais.pais} <br/> {pais.gentilicio}</li>)}
+                {gentilicios.length === 0 ? <p>El arreglo que contiene los objetos regulares está vacío.</p> : <List_items array={gentilicios}/>}
             </ul>
-        </div>
+        </>
     )
 }
 

@@ -41,16 +41,8 @@
   margin: 1em;
 }
 
-#h1-app {
-  text-align: left;
-}
-
 p {
   text-align: justify;
-}
-
-#h1-list {
-  text-align: left;
 }
 
 ul li {
@@ -58,6 +50,11 @@ ul li {
   text-align: justify;
 }
 
-h3 {
-  text-align: left;
+table {
+  border: 1px solid white;
+  padding: 15px;
+}
+
+#h1-title {
+  text-align: center;
 }
